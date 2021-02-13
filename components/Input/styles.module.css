@@ -1,0 +1,19 @@
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.wrapper {
+  border: 1px solid #b9c3d5;
+  box-sizing: border-box;
+  width: 236px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}

@@ -1,0 +1,18 @@
+.button {
+  width: 236px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.primary {
+  background-color: #3488fa;
+  border: none;
+  color: #fff;
+  
+}
+
+.secondary {
+  background-color: #fff;
+  border: 1px solid #3488fa;
+  color: #3488fa;
+}

@@ -3,6 +3,7 @@ import * as Icons from "../components/icons";
 
 export default {
   title: "Icons",
+  component: Icons,
 };
 
 export const Icon = () => (

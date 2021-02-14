@@ -3,26 +3,23 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-const Button = ({ label, className, variant, ...props }) => {
+const Button = ({ children, className, variant, ...props }) => {
   return (
     <button className={cn(styles.button, variant, className)} {...props}>
-      {label}
+      {children}
     </button>
   );
 };
 
 Button.propTypes = {
   /**
-   * What will be displayed inside of the 
+   * What will be displayed inside of the
    */
-  label: PropTypes.string,
+  children: PropTypes.node,
   /**
    * Optional click handler
    */
   onClick: PropTypes.func,
-  /**
-   * How large should the button be?
-   */
 };
 
 Button.defaultProps = {

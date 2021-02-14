@@ -8,11 +8,30 @@
   background-color: #3488fa;
   border: none;
   color: #fff;
-  
 }
 
 .secondary {
   background-color: #fff;
   border: 1px solid #3488fa;
   color: #3488fa;
+}
+
+.iconButton {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 9990px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconButton:focus {
+  outline: none;
+}
+
+.iconButton svg {
+  width: 2em;
+  height: 2em;
 }

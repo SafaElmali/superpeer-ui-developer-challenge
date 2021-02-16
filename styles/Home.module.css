@@ -1,3 +1,62 @@
-.container {
-  max-width: 50%!important;
+.card {
+  width: 384px;
+  height: 795px;
+  background-color: #fff;
+  padding: 32px 24px;
+}
+
+.callTitle {
+  text-align: center;
+}
+
+.callTitle p:first-of-type {
+  color: #3488fa;
+  line-height: 16px;
+  font-size: 13px;
+  margin: 4px 0px;
+}
+
+.callTitle p:last-of-type {
+  color: #222222;
+  font-weight: bold;
+  line-height: 29px;
+  font-size: 24px;
+  margin: 4px 0px 16px;
+}
+
+.callSchedule {
+  display: flex;
+  padding: 17px;
+  border: 1px solid #b9c3d4;
+  border-radius: 8px;
+  background: #ffffff;
+  margin: 0px 0px 8px 0px;
+}
+
+.callSchedule div {
+  font-size: 13px;
+  display: flex;
+}
+
+.callSchedule div:last-of-type {
+  margin: 0px 20px;
+}
+
+.callSchedule svg {
+  margin: 0px 9px;
+}
+
+.callZone {
+  text-align: center;
+  font-size: 13px;
+  color: #818b9d;
+}
+
+.video {
+  margin: 16px 0px;
+}
+
+.video img {
+  max-width: 336px;
+  border-radius: 8px;
 }

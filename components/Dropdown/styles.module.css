@@ -1,0 +1,31 @@
+.dropdownContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label {
+  font-weight: 400;
+  font-size: 15px;
+  list-style: 17.9px;
+  margin: 0px 25px;
+}
+
+select {
+  border: 1px solid #b9c3d4;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  width: 200px;
+  font-size: 12px;
+  appearance: none;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdownIcon {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}

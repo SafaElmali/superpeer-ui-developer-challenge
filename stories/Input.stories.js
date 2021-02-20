@@ -7,5 +7,5 @@ export default {
 };
 
 export const InputStory = (args) => (
-  <Input icon={<Icons.User />} {...args} />
+  <Input icon={<Icons.User />} {...args} containerStyle={{ width: 200 }} />
 );

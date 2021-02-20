@@ -1,9 +1,9 @@
 import styles from "./styles.module.css";
 import cn from "classnames";
 
-const Input = ({ icon, ...props }) => {
+const Input = ({ icon, containerStyle, ...props }) => {
   return (
-    <div className={cn(styles.wrapper)}>
+    <div className={cn(styles.wrapper)} style={containerStyle}>
       {icon}
       <input {...props} />
     </div>

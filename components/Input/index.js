@@ -1,11 +1,17 @@
+import { useState } from "react";
 import styles from "./styles.module.css";
 import cn from "classnames";
 
-const Input = ({ icon, containerStyle, ...props }) => {
+const Input = ({ icon, containerStyle, value = "", ...props }) => {
+  const [inputValue, setInputValue] = useState(value);
   return (
     <div className={cn(styles.wrapper)} style={containerStyle}>
       {icon}
-      <input {...props} />
+      <input
+        value={inputValue}
+        onChange={({ target }) => setInputValue(target.value)}
+        {...props}
+      />
     </div>
   );
 };

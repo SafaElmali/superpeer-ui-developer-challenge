@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "../styles/home.module.css";
 import * as Icon from "../components/icons";
 import Input from "../components/Input";
+import Dropdown from "../components/Dropdown";
+import Button from "../components/Button";
+import buttonStyles from "../components/Button/style.module.css";
 
 const Home = () => {
   return (
@@ -35,8 +38,44 @@ const Home = () => {
             <div className={styles.videoControl}></div>
           </div>
           <div className={styles.settings}>
-            <Input icon={<Icon.User currentColor={"#3488FA"} />} />
-            <div className={styles.settingsControls}></div>
+            <Input
+              value="Adem İlter"
+              icon={<Icon.User currentColor={"#3488FA"} />}
+            />
+            <div className={styles.settingsControls}>
+              <Dropdown
+                labelFor={"Camera"}
+                options={[
+                  { value: "Facetime HD Camera", label: "Facetime HD Camera" },
+                ]}
+              />
+              <Dropdown
+                labelFor={"Speaker"}
+                options={[
+                  {
+                    value: "Built-in Output (Headp...",
+                    label: "Built-in Output (Headp...",
+                  },
+                ]}
+              />
+              <Dropdown
+                labelFor={"Microfone"}
+                options={[
+                  {
+                    value: "Built-in Microphone (E...",
+                    label: "Built-in Microphone (E...",
+                  },
+                ]}
+              />
+              <div>
+                <Button
+                  style={{ width: "100%" }}
+                  variant={buttonStyles.primary}
+                >
+                  Join Call
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
       </main>

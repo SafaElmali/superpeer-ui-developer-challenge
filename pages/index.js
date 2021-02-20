@@ -5,6 +5,7 @@ import Input from "../components/Input";
 import Dropdown from "../components/Dropdown";
 import Button from "../components/Button";
 import buttonStyles from "../components/Button/style.module.css";
+import IconButton from "../components/Button/icon";
 
 const Home = () => {
   return (
@@ -35,7 +36,17 @@ const Home = () => {
           </div>
           <div className={styles.video}>
             <img src="/stock-image.jpg" />
-            <div className={styles.videoControl}></div>
+            <div className={styles.videoControl}>
+              <IconButton>
+                <Icon.Microphone />
+              </IconButton>
+              <IconButton>
+                <Icon.Camera />
+              </IconButton>
+              <IconButton>
+                <Icon.Options />
+              </IconButton>
+            </div>
           </div>
           <div className={styles.settings}>
             <Input

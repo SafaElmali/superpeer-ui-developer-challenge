@@ -54,9 +54,21 @@
 
 .video {
   margin: 16px 0px;
+  position: relative;
 }
 
 .video img {
   max-width: 336px;
   border-radius: 8px;
+}
+
+.videoControl {
+  position: absolute;
+  display: flex;
+  bottom: 15px;
+  left: 25%;
+}
+
+.videoControl button {
+  margin: 0px 8px;
 }

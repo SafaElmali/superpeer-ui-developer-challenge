@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/main.module.css";
 import * as Icon from "../components/icons";
 import Input from "../components/Input";
+import Modal from "../components/Modal";
 import Dropdown from "../components/Dropdown";
 import Button from "../components/Button";
 import buttonStyles from "../components/Button/style.module.css";
@@ -54,29 +55,53 @@ const Home = () => {
               icon={<Icon.User currentColor={"#3488FA"} />}
             />
             <div className={styles.settingsControls}>
-              <Dropdown
+              <Modal
                 labelFor={"Camera"}
-                options={[
-                  { value: "Facetime HD Camera", label: "Facetime HD Camera" },
-                ]}
+                renderComp={
+                  <Dropdown
+                    labelFor={"Camera"}
+                    options={[
+                      {
+                        value: "Facetime HD Camera",
+                        label: "Facetime HD Camera",
+                      },
+                    ]}
+                  />
+                }
               />
-              <Dropdown
+              <Modal
                 labelFor={"Speaker"}
-                options={[
-                  {
-                    value: "Built-in Output (Headp...",
-                    label: "Built-in Output (Headp...",
-                  },
-                ]}
+                renderComp={
+                  <Dropdown
+                    labelFor={"Camera"}
+                    options={[
+                      {
+                        value: "Built-in Output (Headp...",
+                        label: "Built-in Output (Headp...",
+                      },
+                    ]}
+                  />
+                }
               />
-              <Dropdown
+              <Modal
                 labelFor={"Microfone"}
-                options={[
-                  {
-                    value: "Built-in Microphone (E...",
-                    label: "Built-in Microphone (E...",
-                  },
-                ]}
+                renderComp={
+                  <Dropdown
+                    labelFor={"Camera"}
+                    options={[
+                      {
+                        value: "Built-in Microphone (E...",
+                        label: "Built-in Microphone (E...",
+                      },
+                    ]}
+                  />
+                }
+              />
+              <Modal
+                labelFor={"Sound Test"}
+                renderComp={
+                  <Button variant={buttonStyles.secondary}>Play Sound</Button>
+                }
               />
               <div>
                 <Button

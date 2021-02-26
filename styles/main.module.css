@@ -26,16 +26,23 @@
 
 .callSchedule {
   display: flex;
-  padding: 17px;
+  padding: 16px;
   border: 1px solid #b9c3d4;
   border-radius: 8px;
   background: #ffffff;
   margin: 0px 0px 8px 0px;
+  width: 304px;
+  margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 .callSchedule div {
   font-size: 13px;
   display: flex;
+}
+
+.callSchedule div p {
+  white-space: nowrap;
 }
 
 .callSchedule div:last-of-type {
@@ -55,6 +62,8 @@
 .video {
   margin: 16px 0px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .video img {
@@ -66,7 +75,6 @@
   position: absolute;
   display: flex;
   bottom: 15px;
-  left: 25%;
 }
 
 .videoControl button {

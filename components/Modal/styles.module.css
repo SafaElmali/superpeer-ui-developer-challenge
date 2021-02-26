@@ -1,0 +1,20 @@
+.modalRowContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17.9px;
+  margin: 0px 25px 0px 0px;
+  flex: 0.3;
+}
+
+.renderCompWrapper {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}

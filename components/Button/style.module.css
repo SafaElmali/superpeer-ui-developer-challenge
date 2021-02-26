@@ -8,12 +8,14 @@
   background-color: #3488fa;
   border: none;
   color: #fff;
+  width: 100%;
 }
 
 .secondary {
   background-color: #fff;
   border: 1px solid #3488fa;
   color: #3488fa;
+  width: 100%;
 }
 
 .iconButton {

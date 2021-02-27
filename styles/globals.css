@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "SF-Pro-Text";
+}
+
 main {
   min-height: 100vh;
   background: #f4f7fa;

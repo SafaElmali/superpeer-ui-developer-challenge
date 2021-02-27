@@ -74,6 +74,9 @@
 
 .video img {
   max-width: 336px;
+  width: 336px;
+  height: 192px;
+  object-fit: cover;
   border-radius: 8px;
 }
 

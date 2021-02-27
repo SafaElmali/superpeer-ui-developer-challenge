@@ -20,9 +20,11 @@
 
 ## How To Run The Project
 
-- In the root folder run ```npm run dev``
+- In the root folder run ```npm run dev```
 
 ## Storybook
+
+- In the root folder run ```npm run storybook```
 
 <img src="https://user-images.githubusercontent.com/17435062/109378809-8559d400-78e6-11eb-8a00-84cbdd66aa28.png"> 
 

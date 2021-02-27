@@ -50,10 +50,12 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.settings}>
-            <Input
-              value="Adem İlter"
-              icon={<Icon.User currentColor={"#3488FA"} />}
-            />
+            <div className={styles.settingsInput}>
+              <Input
+                value="Adem İlter"
+                icon={<Icon.User currentColor={"#3488FA"} />}
+              />
+            </div>
             <div className={styles.settingsControls}>
               <Modal
                 labelFor={"Camera"}

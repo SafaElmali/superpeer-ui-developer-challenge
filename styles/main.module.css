@@ -28,7 +28,7 @@
 .callSchedule {
   display: flex;
   padding: 16px;
-  border: 1px solid #b9c3d4;
+  border: 2px solid #b9c3d4;
   border-radius: 8px;
   background: #ffffff;
   margin: 0px 0px 8px 0px;
@@ -59,6 +59,8 @@
   text-align: center;
   font-size: 13px;
   color: #818b9d;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .video {
@@ -66,11 +68,18 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 .video img {
   max-width: 336px;
   border-radius: 8px;
+}
+
+.settingsInput {
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .videoControl {

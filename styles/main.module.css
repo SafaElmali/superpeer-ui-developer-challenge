@@ -28,7 +28,7 @@
 .callSchedule {
   display: flex;
   padding: 16px;
-  border: 2px solid #b9c3d4;
+  border: 1px solid #b9c3d4;
   border-radius: 8px;
   background: #ffffff;
   margin: 0px 0px 8px 0px;

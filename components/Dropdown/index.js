@@ -3,7 +3,7 @@ import * as Icons from "../icons";
 
 const Dropdown = ({ options = [], labelFor }) => {
   return (
-    <>
+    <div className={styles.dropdownWrapper}>
       <select className={styles.select} name={labelFor} id={labelFor}>
         {options.map((item, index) => {
           return (
@@ -16,7 +16,7 @@ const Dropdown = ({ options = [], labelFor }) => {
       <div className={styles.dropdownIcon}>
         <Icons.ArrowDown />
       </div>
-    </>
+    </div>
   );
 };
 
